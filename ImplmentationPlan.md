@@ -46,3 +46,24 @@
 - Subscribes to Order Service to initiate shipments.
 - Uses Redis for fast tracking lookups.
 
+---
+
+## **4️⃣ Customer Service**
+### **Database Schema (PostgreSQL)**
+- `customers (id, name, email, password, role)`
+
+### **Key REST Endpoints**
+- `POST /customers/register` → Register new customer
+- `POST /customers/login` → Authenticate customer and return JWT
+- `GET /customers/{id}` → Fetch customer details
+
+### **Inter-Service Communication**
+- Provides JWT authentication for other services.
+- Ensures authorized access to order history and account details.
+
+---
+
+## **Security & Authentication**
+- Uses **Spring Security** for authentication and authorization.
+- Implements **JWT** for securing API endpoints.
+- API Gateway enforces authentication for all services.
