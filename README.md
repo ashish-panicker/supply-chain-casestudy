@@ -1,12 +1,12 @@
 # **Case Study: Supply Chain Management System**
 
 ## **Objective**  
-Develop a microservices-based system to manage the supply chain efficiently, focusing on real-time inventory tracking, order processing, and logistics coordination.
+Develop a microservices-based system to manage the supply chain efficiently, focusing on real-time inventory tracking, order processing, logistics coordination, and customer authentication.
 
 ---
 
 ## **Selected Microservices**  
-We'll implement **three core microservices** to balance complexity and practicality:
+We'll implement **four core microservices** to balance complexity and practicality:
 
 ### **1️⃣ Order Management Service**  
 - Handles purchase orders from customers and suppliers.  
@@ -26,6 +26,12 @@ We'll implement **three core microservices** to balance complexity and practical
 - Manages integration with third-party delivery partners.  
 - Sends real-time tracking notifications.  
 
+### **4️⃣ Customer Service**  
+- Manages customer registration and authentication.  
+- Handles user roles (Customer, Admin).  
+- Provides JWT-based authentication and authorization.  
+- Stores customer order history and profile information.  
+
 ---
 
 ## **System Architecture Overview**  
@@ -37,4 +43,3 @@ We'll implement **three core microservices** to balance complexity and practical
 - **Keycloak / JWT** for authentication and authorization  
 - **Eureka / Consul** for service discovery  
 - **API Gateway (Spring Cloud Gateway or Kong)** for routing and security  
-
