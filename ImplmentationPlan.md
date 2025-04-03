@@ -48,14 +48,14 @@
 
 ---
 
-## **4️⃣ Customer Service**
+## **4️⃣ User Service**
 ### **Database Schema (PostgreSQL)**
-- `customers (id, name, email, password, role)`
+- `users (id, name, email, password, role)`
 
 ### **Key REST Endpoints**
-- `POST /customers/register` → Register new customer
-- `POST /customers/login` → Authenticate customer and return JWT
-- `GET /customers/{id}` → Fetch customer details
+- `POST /users/register` → Register new user
+- `POST /users/login` → Authenticate user and return JWT
+- `GET /users/{id}` → Fetch user details
 
 ### **Inter-Service Communication**
 - Provides JWT authentication for other services.
