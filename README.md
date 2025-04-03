@@ -26,8 +26,8 @@ We'll implement **four core microservices** to balance complexity and practicali
 - Manages integration with third-party delivery partners.  
 - Sends real-time tracking notifications.  
 
-### **4️⃣ Customer Service**  
-- Manages customer registration and authentication.  
+### **4️⃣ User Service**  
+- Manages user registration and authentication.  
 - Handles user roles (Customer, Admin).  
 - Provides JWT-based authentication and authorization.  
 - Stores customer order history and profile information.  
